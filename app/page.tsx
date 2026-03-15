@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
+import { generateWebPageSchema } from "@/lib/structured-data";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
 import ServicesSection from "@/components/sections/ServicesSection";
+import GrowthSection from "@/components/sections/GrowthSection";
+import AcademySection from "@/components/sections/AcademySection";
+import StatsSection from "@/components/sections/StatsSection";
+import TestimonialsSection from "@/components/sections/TestimonialsSection";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://oudtechnologies.com";
 
-// Page-level metadata overrides the root layout defaults
 export const metadata: Metadata = {
   title: "Oudtech — Modern Technology Solutions",
   description:
@@ -13,43 +18,27 @@ export const metadata: Metadata = {
   },
 };
 
-// This is a React Server Component — no "use client" needed.
-// Client-side interactivity is isolated inside individual leaf components.
 export default function HomePage() {
+  const schema = generateWebPageSchema({
+    url: BASE_URL,
+    name: "Oudtech — Modern Technology Solutions",
+    description:
+      "Oud-Technologies builds practical digital solutions — product design, web and mobile development, and SEO for modern businesses.",
+  });
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <HeroSection />
       <AboutSection />
       <ServicesSection />
-
-      {/* Contact section */}
-      <section
-        id="contact"
-        className="py-24 lg:py-36"
-        aria-labelledby="contact-heading"
-      >
-        <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-widest text-sky-400">
-            Contact
-          </p>
-          <h2
-            id="contact-heading"
-            className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl"
-          >
-            Ready to build something great?
-          </h2>
-          <p className="mx-auto mt-6 text-lg text-neutral-400">
-            Tell us about your project and we&apos;ll get back to you within 24
-            hours.
-          </p>
-          <a
-            href="mailto:hello@oudtech.com"
-            className="mt-10 inline-block rounded-full bg-sky-500 px-10 py-4 text-base font-semibold text-white transition-colors hover:bg-sky-400"
-          >
-            hello@oudtech.com
-          </a>
-        </div>
-      </section>
+      <GrowthSection />
+      <AcademySection />
+      <StatsSection />
+      <TestimonialsSection />
     </>
   );
 }

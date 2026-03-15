@@ -1,78 +1,89 @@
 import VideoHero from "@/components/ui/VideoHero";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
+import TypewriterText from "@/components/ui/TypewriterText";
+import { LetsTalkButton } from "@/components/layout/Header";
+
+const cards = [
+  {
+    title: "Technology",
+    description: "Powering the digital world.",
+  },
+  {
+    title: "Innovation",
+    description: "Creating what's next.",
+  },
+  {
+    title: "Trust",
+    description: "Build on transparency and reliability.",
+  },
+];
 
 export default function HeroSection() {
   return (
     <section
       id="hero"
-      // Fixed height prevents CLS regardless of video load time
-      className="relative flex h-screen min-h-[600px] items-center justify-center"
+      className="relative flex min-h-screen flex-col items-center justify-center"
       aria-label="Hero"
     >
-      {/* Background video with parallax */}
-      <VideoHero
-        src="/videos/hero.mp4"
-        poster="/images/hero-poster.jpg"
-      />
+      <VideoHero src="/videos/hero.MP4" />
 
-      {/* Hero copy */}
-      <div className="relative z-10 mx-auto max-w-5xl px-6 text-center text-white">
+      <div className="relative z-10 mx-auto w-full max-w-5xl px-6 pt-32 text-center text-white sm:pt-36 md:pt-44 lg:pt-52">
+        {/* Headline */}
         <RevealOnScroll direction="up" delay={0.1}>
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-neutral-300">
-            Welcome to Oudtech
-          </p>
-        </RevealOnScroll>
-
-        <RevealOnScroll direction="up" delay={0.25}>
-          <h1 className="text-5xl font-bold leading-tight tracking-tight sm:text-6xl lg:text-7xl">
-            Technology Built for{" "}
-            <span className="bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent">
-              Tomorrow
-            </span>
+          <h1 className="text-4xl font-bold leading-[1.15] tracking-tight md:text-5xl lg:text-[57px]">
+            Building Simple Ideas
+            <br />
+            <span className="text-white">into </span>
+            <TypewriterText
+              text="Powerful Solution"
+              className="bg-clip-text text-transparent"
+              style={{
+                backgroundImage:
+                  "linear-gradient(90deg, #ffffff 0%, #979797 100%)",
+              }}
+            />
           </h1>
         </RevealOnScroll>
 
-        <RevealOnScroll direction="up" delay={0.4}>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-neutral-300 sm:text-xl">
-            We design and engineer scalable digital products that help ambitious
-            companies move faster and reach further.
+        {/* Subtext */}
+        <RevealOnScroll direction="up" delay={0.25}>
+          <p className="mx-auto mt-7 max-w-xl text-base leading-7 text-[#8B8F94]">
+            Oud-Technologies is a product-driven technology company building
+            practical Digital solutions. We focus on product design, user
+            experience, and real-world problem solving, operating at the
+            intersection of design and engineering.
           </p>
         </RevealOnScroll>
 
-        <RevealOnScroll direction="up" delay={0.55}>
-          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <a
-              href="#services"
-              className="rounded-full bg-sky-500 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500"
-            >
-              Explore Services
-            </a>
-            <a
-              href="#contact"
-              className="rounded-full border border-white/30 px-8 py-3 text-sm font-semibold text-white backdrop-blur transition-colors hover:bg-white/10"
-            >
-              Get in Touch
-            </a>
+        {/* CTA */}
+        <RevealOnScroll direction="up" delay={0.4}>
+          <div className="mt-10 flex justify-center">
+            <LetsTalkButton href="#contact" />
           </div>
         </RevealOnScroll>
-      </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-white/50">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          aria-hidden="true"
-        >
-          <path d="M12 5v14M5 12l7 7 7-7" />
-        </svg>
+        {/* Cards */}
+        <RevealOnScroll direction="up" delay={0.55}>
+          <div className="mt-16 grid grid-cols-1 gap-4 pb-20 sm:grid-cols-3">
+            {cards.map((card) => (
+              <div
+                key={card.title}
+                className="rounded-2xl p-6 text-left backdrop-blur-md"
+                style={{
+                  backgroundColor: "#15141433",
+                  border: "1px solid #242424",
+                }}
+              >
+                <h3 className="text-base font-semibold text-white">
+                  {card.title}
+                </h3>
+                <p className="mt-2 text-sm text-[#8B8F94]">
+                  {card.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </RevealOnScroll>
       </div>
     </section>
   );

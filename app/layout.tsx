@@ -1,20 +1,39 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Geist } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import localFont from "next/font/local";
+import { playfairDisplay } from "@/lib/fonts";
 import {
   generateOrganizationSchema,
   generateWebsiteSchema,
 } from "@/lib/structured-data";
-import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
-
-const inter = Inter({
-  subsets: ["latin"],
+const neueMontreal = localFont({
+  src: [
+    {
+      path: "../public/fonts/NeueMontreal-Light.otf",
+      style: "light",
+      weight: "300",
+    },
+    {
+      path: "../public/fonts/NeueMontreal-Regular.otf",
+      style: "normal",
+      weight: "400",
+    },
+    {
+      path: "../public/fonts/NeueMontreal-Medium.otf",
+      style: "medium",
+      weight: "500",
+    },
+    {
+      path: "../public/fonts/NeueMontreal-Bold.otf",
+      style: "bold",
+      weight: "700",
+    },
+  ],
+  variable: "--font-neue-montreal",
   display: "swap",
-  variable: "--font-inter",
 });
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://oudtech.com";
@@ -48,8 +67,7 @@ export const metadata: Metadata = {
     url: BASE_URL,
     siteName: "Oudtech",
     title: "Oudtech — Modern Technology Solutions",
-    description:
-      "Cutting-edge technology solutions for ambitious businesses.",
+    description: "Cutting-edge technology solutions for ambitious businesses.",
     images: [
       {
         url: "/og-image.jpg",
@@ -86,7 +104,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={cn("font-sans", geist.variable)}>
+    <html
+      lang="en"
+      className={`${playfairDisplay.variable} ${neueMontreal.variable}`}
+    >
       <head>
         <script
           type="application/ld+json"
@@ -101,7 +122,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-neutral-950 text-neutral-100 font-sans antialiased">
+      <body>
         <Header />
         <main>{children}</main>
         <Footer />

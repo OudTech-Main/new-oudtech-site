@@ -7,7 +7,12 @@ const nextConfig: NextConfig = {
 
   images: {
     // Allow optimisation for remote image hosts you use
-    remotePatterns: [],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
     // Formats in preference order — avif is smaller, webp is the fallback
     formats: ["image/avif", "image/webp"],
   },
