@@ -8,9 +8,9 @@ export default function AboutStorySection() {
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
           {/* Left: image */}
           <RevealOnScroll direction="up" delay={0.1} threshold={0}>
-            <div className="overflow-hidden bg-neutral-200/60">
+            <div className="overflow-hidden rounded-2xl bg-neutral-200/60">
               <Image
-                src="/about-us.jpg"
+                src="/story-img.png"
                 alt="OudTech team"
                 width={680}
                 height={460}
@@ -34,7 +34,7 @@ export default function AboutStorySection() {
             </RevealOnScroll>
 
             <RevealOnScroll direction="right" delay={0.35} threshold={0}>
-              <p className="mt-6 text-lg leading-5 text-[#696F77] lg:text-3xl lg:leading-7">
+              <p className="mt-6 text-base leading-5 text-[#696F77] lg:text-xl lg:leading-7">
                 <span className="lg:hidden leading-snug">
                   Oud-Technologies builds practical digital solutions focused on
                   product design and real-world problem solving.
@@ -44,8 +44,7 @@ export default function AboutStorySection() {
                   building practical Digital solutions. We focus on product
                   design, user experience, and real-world problem solving,
                   operating at the intersection of software development and
-                  innovation across fintech, rentals, emergency services, and
-                  e-commerce.
+                  innovation across all sectors.
                 </span>
               </p>
             </RevealOnScroll>

@@ -5,9 +5,9 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { href: "/services", label: "Services" },
+  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "#works", label: "Works" },
+  { href: "/services", label: "Services" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -53,7 +53,7 @@ export default function Header() {
             {isLight ? (
               <LightLetsTalkButton href="/contact" />
             ) : (
-              <LetsTalkButton href="#contact" />
+              <LetsTalkButton href="/contact" />
             )}
           </div>
 
@@ -69,12 +69,32 @@ export default function Header() {
             onClick={() => setOpen((v) => !v)}
           >
             {open ? (
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                <path d="M4 4l12 12M16 4L4 16" stroke={isLight ? "#0F1010" : "white"} strokeWidth="1.8" strokeLinecap="round" />
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 4l12 12M16 4L4 16"
+                  stroke={isLight ? "#0F1010" : "white"}
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                />
               </svg>
             ) : (
-              <svg width="26" height="17" viewBox="0 0 26 17" fill="none" aria-hidden="true">
-                <path d="M0 17V14.1667H25.5V17H0ZM0 9.91667V7.08333H25.5V9.91667H0ZM0 2.83333V0H25.5V2.83333H0Z" fill={isLight ? "#0F1010" : "white"} />
+              <svg
+                width="26"
+                height="17"
+                viewBox="0 0 26 17"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M0 17V14.1667H25.5V17H0ZM0 9.91667V7.08333H25.5V9.91667H0ZM0 2.83333V0H25.5V2.83333H0Z"
+                  fill={isLight ? "#0F1010" : "white"}
+                />
               </svg>
             )}
           </button>
@@ -82,11 +102,13 @@ export default function Header() {
 
         {/* Mobile dropdown */}
         {open && (
-          <div className={`mt-2 overflow-hidden rounded-2xl border px-5 py-4 sm:hidden ${
-            isLight
-              ? "border-neutral-200 bg-white"
-              : "border-white/10 bg-neutral-900/90 backdrop-blur-2xl"
-          }`}>
+          <div
+            className={`mt-2 overflow-hidden rounded-2xl border px-5 py-4 sm:hidden ${
+              isLight
+                ? "border-neutral-200 bg-white"
+                : "border-white/10 bg-neutral-900/90 backdrop-blur-2xl"
+            }`}
+          >
             <ul className="flex flex-col gap-1" role="list">
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -104,11 +126,13 @@ export default function Header() {
                 </li>
               ))}
             </ul>
-            <div className={`mt-3 border-t pt-3 ${isLight ? "border-neutral-200" : "border-white/10"}`}>
+            <div
+              className={`mt-3 border-t pt-3 ${isLight ? "border-neutral-200" : "border-white/10"}`}
+            >
               {isLight ? (
                 <LightLetsTalkButton href="/contact" />
               ) : (
-                <LetsTalkButton href="#contact" />
+                <LetsTalkButton href="/contact" />
               )}
             </div>
           </div>
@@ -120,7 +144,8 @@ export default function Header() {
 
 function OudTechLogo({ invert = false }: { invert?: boolean }) {
   return (
-    <svg style={invert ? { filter: "invert(1)" } : undefined}
+    <svg
+      style={invert ? { filter: "invert(1)" } : undefined}
       width="165"
       height="28"
       viewBox="0 0 189 32"
@@ -170,7 +195,7 @@ export function LetsTalkButton({
   className?: string;
 }) {
   return (
-    <a
+    <Link
       href={href}
       className={`inline-flex w-fit items-center gap-2 rounded-full bg-[#FFFFFF1A] pl-5 pr-1.5 py-1.5 text-sm font-medium text-white transition-colors hover:bg-neutral-800 ${className}`}
     >
@@ -192,19 +217,25 @@ export function LetsTalkButton({
           />
         </svg>
       </span>
-    </a>
+    </Link>
   );
 }
 
 function LightLetsTalkButton({ href }: { href: string }) {
   return (
-    <a
+    <Link
       href={href}
       className="inline-flex w-fit items-center gap-2 rounded-full bg-[#F1F5F9] py-1.5 pl-5 pr-1.5 text-sm font-medium text-[#0F1010] transition-colors hover:bg-neutral-200"
     >
       LET&apos;S TALK
       <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#064ADF]">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 14 14"
+          fill="none"
+          aria-hidden="true"
+        >
           <path
             d="M2.5 11.5L11.5 2.5M11.5 2.5H5M11.5 2.5V9"
             stroke="white"
@@ -214,6 +245,6 @@ function LightLetsTalkButton({ href }: { href: string }) {
           />
         </svg>
       </span>
-    </a>
+    </Link>
   );
 }

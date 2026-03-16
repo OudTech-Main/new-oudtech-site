@@ -58,7 +58,7 @@ export default function HeroSection() {
         {/* CTA */}
         <RevealOnScroll direction="up" delay={0.4}>
           <div className="mt-10 flex justify-center">
-            <LetsTalkButton href="#contact" />
+            <LetsTalkButton href="/contact" />
           </div>
         </RevealOnScroll>
 

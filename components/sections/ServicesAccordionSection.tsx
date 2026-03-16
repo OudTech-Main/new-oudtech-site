@@ -65,12 +65,12 @@ const services = [
   {
     title: "UI/UX Design",
     description:
-      "We build stunning, responsive websites with intuitive designs that enhance user experience.",
+      "We design stunning, intuitive, and 100% professional custom websites & applications that enhance user experience.",
   },
   {
     title: "Website Development",
     description:
-      "Custom web applications built for performance, scalability, and reliability — from simple landing pages to complex platforms.",
+      "Custom responsive websites & web applications built for performance, scalability, and reliability — from simple landing pages to complex platforms.",
   },
   {
     title: "Mobile App Development",
@@ -113,8 +113,8 @@ export default function ServicesAccordionSection() {
           <RevealOnScroll direction="up" delay={0.2} threshold={0}>
             <div>
               <p className="text-base leading-[1.5] text-[#0F1010] md:text-2xl lg:text-[28px] lg:leading-[1.4]">
-                Elevate your digital products with our comprehensive product
-                design services. Our expertise includes:
+                Elevate your digital presence with our comprehensive services.
+                Our expertise includes:
               </p>
 
               <div className="mt-10">

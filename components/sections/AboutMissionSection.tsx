@@ -1,11 +1,12 @@
 import Image from "next/image";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
+import Link from "next/link";
 
 const capabilities = [
   "Strategic Planning",
-  "Operational Excellence",
-  "Market Expansion",
-  "Risk Management",
+  "Excellent Execution",
+  "Quality-Focused Development",
+  "Long-Term Support",
 ];
 
 const PinIcon = () => (
@@ -54,10 +55,10 @@ export default function AboutMissionSection() {
           <div className="flex flex-col">
             <RevealOnScroll direction="up" delay={0.2}>
               <p className="max-w-[260px] text-sm leading-5 text-[#696F77] sm:max-w-none lg:text-base lg:leading-7">
-                At Oudtech, we help businesses navigate complexity, unlock
-                growth, and achieve lasting transformation with a team of
-                experienced builders. We combine strategy and technology for
-                immediate, measurable impact.
+                At OudTech, we help individuals/businesses transform their ideas
+                into reliable digital products that solve real problems and
+                support long-term growth. By combining modern technologies,
+                thoughtful design, and efficient development practices.
               </p>
             </RevealOnScroll>
 
@@ -71,10 +72,10 @@ export default function AboutMissionSection() {
                 <div className="w-[3px] flex-shrink-0 rounded-full bg-[#1D1EE3]" />
                 <div>
                   <p className="text-5xl font-bold text-[#0F1010] lg:text-6xl">
-                    150+
+                    10+
                   </p>
                   <p className="mt-1 text-sm font-medium text-[#03030F]">
-                    Successful Projects Delivered
+                    Years of Building Solutions
                   </p>
                 </div>
               </div>
@@ -85,8 +86,8 @@ export default function AboutMissionSection() {
           <RevealOnScroll direction="up" delay={0.25}>
             <div className="overflow-hidden rounded-3xl bg-neutral-200/60">
               <Image
-                src="/about-mission.png"
-                alt="OudTech founder speaking at an event"
+                src="/mission-img.JPEG"
+                alt="Two female oudtech team members taking a photo at the photo booth during the node 25.1 event."
                 width={760}
                 height={620}
                 className="h-[320px] w-full object-cover object-top lg:h-[420px]"
@@ -113,8 +114,8 @@ export default function AboutMissionSection() {
               </RevealOnScroll>
 
               <RevealOnScroll direction="up" delay={0.45}>
-                <a
-                  href="#services"
+                <Link
+                  href="/services"
                   className="flex w-full items-center justify-between gap-2 rounded-full bg-[#2563EB] py-1.5 pl-5 pr-1.5 transition-opacity hover:opacity-90"
                 >
                   <span className="text-sm font-medium text-white">
@@ -137,7 +138,7 @@ export default function AboutMissionSection() {
                       />
                     </svg>
                   </span>
-                </a>
+                </Link>
               </RevealOnScroll>
             </div>
           </div>

@@ -22,7 +22,7 @@ const photos = [
     },
   },
   {
-    src: "/about-photo-2.jpg",
+    src: "/about-us-2.JPEG",
     alt: "OudTech tech skills programme participants",
     // aspect matches 241×174  (shorter top-right)
     heightClass: "h-[130px] sm:h-[152px] lg:h-[174px]",
@@ -32,7 +32,7 @@ const photos = [
     },
   },
   {
-    src: "/about-photo-3.jpg",
+    src: "/about-us-3.JPEG",
     alt: "OudTech founder speaking at an event",
     // aspect matches 241×230
     heightClass: "h-[172px] sm:h-[200px] lg:h-[230px]",
@@ -93,7 +93,7 @@ export default function AboutPageHero() {
 
             <RevealOnScroll direction="up" delay={0.5} threshold={0}>
               <div className="mt-10">
-                <LetsTalkButton href="#contact" />
+                <LetsTalkButton href="/contact" />
               </div>
             </RevealOnScroll>
           </div>

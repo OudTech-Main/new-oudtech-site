@@ -3,8 +3,8 @@ import { instrumentSans } from "@/lib/fonts";
 
 const stats = [
   {
-    value: "150+",
-    description: "Over 300+ clients complete high-impact projects.",
+    value: "100%",
+    description: "Every project is completely tailored to the client’s needs.",
     icon: (
       <svg
         width="27"
@@ -42,7 +42,7 @@ const stats = [
   },
   {
     value: "98%",
-    description: "Trusted by hundreds of clients who rate our work highly.",
+    description: "Trusted by clients who rate our work highly.",
     icon: (
       <svg
         width="27"
@@ -104,9 +104,9 @@ const stats = [
     ),
   },
   {
-    value: "50+",
+    value: "10+",
     description:
-      "Our ability to adapt and deliver impactful solutions across industries.",
+      "Building on years of experience, we provide trusted guidance.",
     icon: (
       <svg
         width="27"
@@ -155,9 +155,8 @@ const stats = [
     ),
   },
   {
-    value: "10+",
-    description:
-      "Building on years of experience, we provide trusted guidance.",
+    value: "5+",
+    description: "Technologies used to build modern applications.",
     icon: (
       <svg
         width="27"
@@ -246,7 +245,9 @@ export default function StatsSection() {
                 </p>
 
                 {/* Description */}
-                <p className={`${instrumentSans.className} mt-3 text-sm leading-6 text-[#03030FB2]`}>
+                <p
+                  className={`${instrumentSans.className} mt-3 text-sm leading-6 text-[#03030FB2]`}
+                >
                   {stat.description}
                 </p>
               </div>

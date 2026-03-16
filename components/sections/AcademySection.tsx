@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
 import { playfairDisplay } from "@/lib/fonts";
@@ -132,8 +133,8 @@ export default function AcademySection() {
               </RevealOnScroll>
 
               <RevealOnScroll direction="right" delay={0.25}>
-                <a
-                  href="#contact"
+                <Link
+                  href="https://academy.oudtechnologies.com"
                   className="mt-8 inline-flex items-center gap-2 rounded-full bg-white py-1.5 pl-5 pr-1.5 transition-opacity hover:opacity-90"
                 >
                   <span className="text-sm font-medium text-neutral-900">
@@ -156,7 +157,7 @@ export default function AcademySection() {
                       />
                     </svg>
                   </span>
-                </a>
+                </Link>
               </RevealOnScroll>
             </div>
           </div>

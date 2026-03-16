@@ -60,8 +60,8 @@ const contactDetails = [
   {
     icon: <PhoneIcon />,
     label: "Call",
-    value: "+234 916 324 9133",
-    href: "tel:+2349163249133",
+    value: " +234 805 295 2194",
+    href: "tel:+2348052952194",
   },
   {
     icon: <MailIcon />,
@@ -72,7 +72,7 @@ const contactDetails = [
   {
     icon: <LocationIcon />,
     label: "Location",
-    value: "Lagos, Nigeria",
+    value: "Port Harcourt, Nigeria",
     href: null,
   },
 ];
@@ -82,7 +82,14 @@ const inputClass =
 
 type Status = "idle" | "loading" | "success" | "error";
 
-const emptyForm = { firstName: "", lastName: "", email: "", phone: "", country: "", message: "" };
+const emptyForm = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  phone: "",
+  country: "",
+  message: "",
+};
 
 export default function ContactFormSection() {
   const [form, setForm] = useState(emptyForm);
@@ -133,7 +140,7 @@ export default function ContactFormSection() {
           <p className="mt-4 max-w-xl leading-6 text-[#03030F99] text-base">
             Have questions or want to collaborate? Reach out to us—we&apos;re
             here to help! Whether it&apos;s partnerships, events, or general
-            inquiries, let&apos;s connect and make remote work better together.
+            inquiries, let&apos;s connect and create magic.
           </p>
         </RevealOnScroll>
 
@@ -150,7 +157,7 @@ export default function ContactFormSection() {
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="flex flex-col gap-1.5">
                   <label className="text-base text-[#0F1010]">
-                    First name<span className="text-[#03030FB2]">*</span>
+                    First name<span className="text-red-500">*</span>
                   </label>
                   <input
                     type="text"
@@ -162,9 +169,7 @@ export default function ContactFormSection() {
                   />
                 </div>
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-base text-[#0F1010]">
-                    Last name<span className="text-[#03030FB2]">*</span>
-                  </label>
+                  <label className="text-base text-[#0F1010]">Last name</label>
                   <input
                     type="text"
                     placeholder="Enter last name"
@@ -179,7 +184,7 @@ export default function ContactFormSection() {
               {/* Row 2: Email */}
               <div className="flex flex-col gap-1.5">
                 <label className="text-base text-[#0F1010]">
-                  Email<span className="text-[#03030FB2]">*</span>
+                  Email<span className="text-red-500">*</span>
                 </label>
                 <input
                   type="email"
@@ -195,7 +200,7 @@ export default function ContactFormSection() {
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="flex flex-col gap-1.5">
                   <label className="text-base text-[#0F1010]">
-                    Phone number<span className="text-[#03030FB2]">*</span>
+                    Phone number
                   </label>
                   <input
                     type="tel"
@@ -207,9 +212,7 @@ export default function ContactFormSection() {
                   />
                 </div>
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-base text-[#0F1010]">
-                    Country<span className="text-[#03030FB2]">*</span>
-                  </label>
+                  <label className="text-base text-[#0F1010]">Country</label>
                   <input
                     type="text"
                     placeholder="Enter country"
@@ -224,7 +227,7 @@ export default function ContactFormSection() {
               {/* Row 4: Message */}
               <div className="flex flex-col gap-1.5">
                 <label className="text-base text-[#0F1010]">
-                  Message<span className="text-[#03030FB2]">*</span>
+                  Message<span className="text-red-500">*</span>
                 </label>
                 <textarea
                   rows={5}

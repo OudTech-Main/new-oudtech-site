@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
 import { playfairDisplay } from "@/lib/fonts";
 
@@ -31,8 +32,8 @@ export default function GrowthSection() {
               </h2>
 
               {/* LET'S TALK button */}
-              <a
-                href="#contact"
+              <Link
+                href="/contact"
                 className="mt-10 inline-flex w-fit items-center gap-2 rounded-full bg-white py-1.5 pl-5 pr-1.5 transition-opacity hover:opacity-90"
               >
                 <span className="text-sm font-medium text-neutral-900">
@@ -55,7 +56,7 @@ export default function GrowthSection() {
                     />
                   </svg>
                 </span>
-              </a>
+              </Link>
 
               {/* Bullet list */}
               <ul className="mt-10 space-y-3">

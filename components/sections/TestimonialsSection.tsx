@@ -29,8 +29,8 @@ const testimonials = [
   {
     quote:
       "They provided clarity where we had confusion, and structure where we had chaos. It's been one of the best investments we've made as a company.",
-    name: "Jane Cooper",
-    role: "Product Manager",
+    name: "Elton Onyinyechi",
+    role: "CEO, Yehchee",
     avatar:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
     offset: false,
@@ -38,47 +38,34 @@ const testimonials = [
   {
     quote:
       "Their strategic insight and hands-on approach helped us streamline operations and unlock new growth opportunities. We saw measurable results within months.",
-    name: "Cameron Williamson",
-    role: "Stocking Associate",
-    avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face",
+    name: "Ugwu Arinze",
+    role: "CEO, Bluske Ent.",
+    avatar: "/arinze.PNG",
     offset: true,
   },
   {
     quote:
       "From the first meeting, they were invested in our success. Their structured process and sharp strategy helped us turn a struggling department into a high-performing unit.",
-    name: "Arlene McCoy",
-    role: "Operations Lead",
-    avatar:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
+    name: "Lemuella Oyinbunugha",
+    role: "Founder, Lumora Accountability Circle",
+    avatar: "/lemuella.jpeg",
     offset: false,
   },
   {
     quote:
       "What impressed me most was their attention to detail and the way they kept us informed at every stage of the process. Regular updates and clear communication throughout.",
-    name: "Robert Fox",
-    role: "Mechanic",
-    avatar:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face",
+    name: "Jeffery Edwards",
+    role: "CEO, TheeGodBrand",
+    avatar: "jeff.PNG",
     offset: true,
   },
   {
     quote:
       "The team's ability to translate complex technical challenges into clear, actionable solutions was remarkable. They delivered beyond our expectations.",
-    name: "Savannah Nguyen",
-    role: "Creative Director",
-    avatar:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&crop=face",
+    name: "Melody Frank",
+    role: "CEO, Zurirealm",
+    avatar: "/melody.jpeg",
     offset: false,
-  },
-  {
-    quote:
-      "Working with OudTech transformed how we think about our digital presence. Their team brought both the vision and the technical skill to bring it to life.",
-    name: "Devon Lane",
-    role: "CEO, TechStart",
-    avatar:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
-    offset: true,
   },
 ];
 

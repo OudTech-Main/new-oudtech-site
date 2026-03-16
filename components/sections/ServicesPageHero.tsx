@@ -16,7 +16,7 @@ export default function ServicesPageHero() {
           sizes="100vw"
         />
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/80" />
       </div>
 
       {/* Content */}
@@ -59,7 +59,7 @@ export default function ServicesPageHero() {
         {/* CTA */}
         <RevealOnScroll direction="up" delay={0.5} threshold={0}>
           <div className="mt-10">
-            <LetsTalkButton href="#contact" />
+            <LetsTalkButton href="/contact" />
           </div>
         </RevealOnScroll>
       </div>

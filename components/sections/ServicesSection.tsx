@@ -250,19 +250,17 @@ export default function ServicesSection() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="mx-auto max-w-7xl px-6 py-20 lg:px-12 lg:py-28">
+      <div className="mx-auto max-w-7xl px-6 py-12 lg:px-12 lg:py-28">
         {/* ── Header ── */}
         <RevealOnScroll direction="up" className="max-w-3xl">
-          <p className="text-sm font-medium text-[#A8A8A8]">
-            Services
-          </p>
+          <p className="text-sm font-medium text-[#A8A8A8]">Services</p>
           <h2
             id="services-heading"
             className="mt-3 text-4xl font-bold tracking-tight text-[#03030F] lg:text-5xl"
           >
             From idea to App store
           </h2>
-          <p className="mt-4 text-base leading-7 text-[#757574]">
+          <p className="mt-4 md:text-base text-xl leading-7 text-[#757574]">
             Strategy, design and development from people who&apos;ve done it
             themselves, without the agency overhead.
           </p>
@@ -273,7 +271,7 @@ export default function ServicesSection() {
             style={{ backgroundColor: "#F1F5F9" }}
           >
             <span className="text-sm font-medium md:text-lg text-[#0F1010]">
-              ABOUT US
+              SERVICES
             </span>
             <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#064ADF]">
               <svg
@@ -296,20 +294,20 @@ export default function ServicesSection() {
         </RevealOnScroll>
 
         {/* ── Service grid ── */}
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, i) => {
             return (
               <RevealOnScroll
                 key={service.title}
                 direction="up"
                 delay={0.08 * (i % 3)}
-                className={["px-8 py-10"].filter(Boolean).join(" ")}
+                className={["md:px-8 py-6 md:py-10"].filter(Boolean).join(" ")}
               >
                 {/* Icon */}
                 <div className="mb-8">{service.icon}</div>
 
                 {/* Text */}
-                <p className="text-sm leading-7 text-[#757574]">
+                <p className="text-base md:text-[22px] leading-7 text-[#757574]">
                   <span className="font-medium text-[#03030F]">
                     {service.title}{" "}
                   </span>

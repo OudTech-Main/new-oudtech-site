@@ -14,7 +14,7 @@ export default function AboutSection() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         {/* ── Full-width title row ── */}
-        <div className="mb-8 flex items-center justify-between">
+        <div className="mb-8 flex flex-col md:flex-row md:items-center md:justify-between">
           {/* 1. "About Us" slides in from the left */}
           <RevealOnScroll direction="right" delay={0} threshold={0}>
             <h2 className="text-3xl font-medium text-[#0F1010] md:text-4xl lg:text-5xl">
@@ -23,7 +23,12 @@ export default function AboutSection() {
           </RevealOnScroll>
 
           {/* 2. Badge slides in from the right */}
-          <RevealOnScroll direction="left" delay={0.12} threshold={0}>
+          <RevealOnScroll
+            className="mb-12 mt-4 md:mb-0 md:mt-0"
+            direction="left"
+            delay={0.12}
+            threshold={0}
+          >
             <div
               className="inline-flex items-center gap-2 rounded-full py-1.5 pl-5 pr-1.5"
               style={{ backgroundColor: "#F1F5F9" }}
@@ -76,14 +81,14 @@ export default function AboutSection() {
               direction="up"
               delay={0.45}
               threshold={0}
-              className="absolute -right-2 bottom-4 w-36 md:bottom-20 md:right-0 md:w-44"
+              className="absolute -right-2 -bottom-4 w-[114.74px] md:bottom-20 md:right-0 md:w-[177px]"
             >
               <div
                 className="rounded-2xl bg-white px-4 py-5"
                 style={{ boxShadow: "0 8px 40px rgba(0,0,0,0.13)" }}
               >
                 <div className="flex flex-col items-center">
-                  <div className="relative h-32 w-32">
+                  <div className="relative h-[84.84px] w-[84.84px] md:h-32 md:w-32">
                     <svg
                       viewBox="0 0 100 100"
                       className="h-full w-full -rotate-90"
@@ -108,13 +113,11 @@ export default function AboutSection() {
                       />
                     </svg>
                     <div className="absolute inset-0 flex flex-col items-center justify-center">
-                      <span className="text-lg font-bold text-[#064ADF]">
+                      <span className="text-sm lg:text-lg font-bold text-[#064ADF]">
                         99.9%
                       </span>
-                      <span className="mt-0.5 text-center text-[11px] leading-tight text-[#064ADF]">
-                        Clients
-                        <br />
-                        satisfaction
+                      <span className="mt-0.5 text-center text-[6.67px] lg:text-[11px] leading-tight text-[#064ADF]">
+                        Clients satisfaction
                       </span>
                     </div>
                   </div>
@@ -127,19 +130,19 @@ export default function AboutSection() {
               direction="right"
               delay={0.6}
               threshold={0}
-              className="absolute -left-2 top-4 w-48 md:-left-8 md:top-20 md:w-60"
+              className="absolute left-2 -top-10 w-[156px] md:-left-8 md:top-20 md:w-[197px]"
             >
               <div
                 className="rounded-2xl bg-white px-5 py-4"
                 style={{ boxShadow: "0 8px 40px rgba(0,0,0,0.13)" }}
               >
-                <p className="text-center text-sm font-semibold leading-snug text-[#0F1010]">
+                <p className="text-center text-[11.09px] md:text-sm font-medium leading-snug text-[#0F1010]">
                   What software do you
                   <br />
                   want to build?
                 </p>
                 <div className="mt-3 flex items-center gap-2 rounded-lg bg-[#064ADF] px-3 py-2">
-                  <span className="flex-1 text-sm text-white">
+                  <span className="flex-1 text-[7.92px] md:text-sm text-white">
                     FinTech App?
                   </span>
                   <svg
@@ -161,7 +164,7 @@ export default function AboutSection() {
           </div>
 
           {/* Right: headline + body */}
-          <div className="lg:pl-6">
+          <div className="mt-6 md:mt-0 lg:pl-6">
             {/* 6a. Heading slides in from left */}
             <RevealOnScroll direction="right" delay={0.3} threshold={0}>
               <h2
