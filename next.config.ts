@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "img.youtube.com",
+      },
     ],
     // Formats in preference order — avif is smaller, webp is the fallback
     formats: ["image/avif", "image/webp"],

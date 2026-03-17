@@ -6,73 +6,58 @@ import { useState } from "react";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
 import { playfairDisplay } from "@/lib/fonts";
 
-/* ── Testimonial data ─────────────────────────────────────────── */
-const testimonials = [
-  {
-    name: "Student 1",
-    // Replace with actual testimonial thumbnail paths
-    image: "/about-us.jpg",
-    objectPosition: "left top",
-  },
-  {
-    name: "Student 2",
-    image: "/about-us.jpg",
-    objectPosition: "center top",
-  },
-  {
-    name: "Student 3",
-    image: "/about-us.jpg",
-    objectPosition: "right top",
-  },
+/* ── Video data ───────────────────────────────────────────────── */
+const videos = [
+  { id: "BP4hKfrj8Qw", title: "OudTech Academy highlight" },
+  { id: "lR44_69Trg4", title: "OudTech Academy short" },
+  { id: "oe6Svxjxf3g", title: "OudTech Academy short" },
 ];
 
-function PlayButton() {
-  return (
-    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-lg">
-      <svg
-        width="20"
-        height="20"
-        viewBox="0 0 20 20"
-        fill="none"
-        aria-hidden="true"
-      >
-        <path d="M5 3.5l12 6.5-12 6.5V3.5z" fill="#0F1010" />
-      </svg>
-    </div>
-  );
-}
-
-function TestimonialCard({
-  testimonial,
-}: {
-  testimonial: (typeof testimonials)[0];
-}) {
-  const [hovered, setHovered] = useState(false);
+function VideoCard({ video }: { video: (typeof videos)[0] }) {
+  const [playing, setPlaying] = useState(false);
 
   return (
     <div
-      className="relative overflow-hidden rounded-2xl"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      className="relative w-full overflow-hidden rounded-2xl bg-black lg:w-[399px]"
+      style={{ aspectRatio: "1 / 1", border: "3px solid #FFFFFF80" }}
     >
-      <Image
-        src={testimonial.image}
-        alt={testimonial.name}
-        width={440}
-        height={360}
-        className="h-[300px] w-full object-cover transition-transform duration-500"
-        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 440px"
-        style={{
-          objectPosition: testimonial.objectPosition,
-          transform: hovered ? "scale(1.04)" : "scale(1)",
-        }}
-      />
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/20" />
-      {/* Play button */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <PlayButton />
-      </div>
+      {playing ? (
+        <iframe
+          src={`https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0`}
+          title={video.title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="absolute inset-0 h-full w-full"
+        />
+      ) : (
+        <>
+          <Image
+            src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
+            alt={video.title}
+            fill
+            className="object-cover transition-transform duration-500 hover:scale-105"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 440px"
+          />
+          <div className="absolute inset-0 bg-black/30" />
+          <button
+            onClick={() => setPlaying(true)}
+            aria-label={`Play ${video.title}`}
+            className="absolute inset-0 flex items-center justify-center"
+          >
+            <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-xl transition-transform duration-200 hover:scale-110">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path d="M5 3.5l12 6.5-12 6.5V3.5z" fill="#0F1010" />
+              </svg>
+            </span>
+          </button>
+        </>
+      )}
     </div>
   );
 }
@@ -178,9 +163,9 @@ export default function AcademySection() {
             </RevealOnScroll>
 
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {testimonials.map((t, i) => (
-                <RevealOnScroll key={t.name} direction="up" delay={0.1 * i}>
-                  <TestimonialCard testimonial={t} />
+              {videos.map((v, i) => (
+                <RevealOnScroll key={v.id} direction="up" delay={0.1 * i}>
+                  <VideoCard video={v} />
                 </RevealOnScroll>
               ))}
             </div>

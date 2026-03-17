@@ -56,7 +56,7 @@ const testimonials = [
       "What impressed me most was their attention to detail and the way they kept us informed at every stage of the process. Regular updates and clear communication throughout.",
     name: "Jeffery Edwards",
     role: "CEO, TheeGodBrand",
-    avatar: "jeff.PNG",
+    avatar: "/jeff.PNG",
     offset: true,
   },
   {
