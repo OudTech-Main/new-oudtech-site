@@ -201,7 +201,7 @@ const services = [
   {
     title: "Strategy",
     description:
-      "Most first versions fail because they try to do too much, too soon. We help you strip your idea down to its core—the smallest version that delivers real value. Through product thinking, market validation, and prioritization, we define a clear roadmap that gets you to launch faster, with purpose.",
+      "Most first versions fail because they try to do too much, too soon. We help you strip your idea down to its core—the smallest version that delivers real value.",
     icon: <MapIcon />,
   },
   {
