@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import localFont from "next/font/local";
 import { playfairDisplay } from "@/lib/fonts";
 import {
@@ -127,6 +128,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
       </body>
+      <SpeedInsights />
     </html>
   );
 }
