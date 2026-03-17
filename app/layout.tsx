@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import localFont from "next/font/local";
 import { playfairDisplay } from "@/lib/fonts";
 import {
@@ -129,6 +130,7 @@ export default function RootLayout({
         <Footer />
       </body>
       <SpeedInsights />
+      <Analytics />
     </html>
   );
 }
