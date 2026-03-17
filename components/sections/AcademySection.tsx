@@ -18,7 +18,7 @@ function VideoCard({ video }: { video: (typeof videos)[0] }) {
 
   return (
     <div
-      className="relative w-full overflow-hidden rounded-2xl bg-black lg:w-[399px]"
+      className="relative w-full overflow-hidden rounded-2xl bg-black"
       style={{ aspectRatio: "1 / 1", border: "3px solid #FFFFFF80" }}
     >
       {playing ? (
@@ -162,7 +162,7 @@ export default function AcademySection() {
               </h2>
             </RevealOnScroll>
 
-            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
               {videos.map((v, i) => (
                 <RevealOnScroll key={v.id} direction="up" delay={0.1 * i}>
                   <VideoCard video={v} />

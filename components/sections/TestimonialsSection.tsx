@@ -31,8 +31,7 @@ const testimonials = [
       "They provided clarity where we had confusion, and structure where we had chaos. It's been one of the best investments we've made as a company.",
     name: "Elton Onyinyechi",
     role: "CEO, Yehchee",
-    avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
+    avatar: "/elton.jpeg",
     offset: false,
   },
   {

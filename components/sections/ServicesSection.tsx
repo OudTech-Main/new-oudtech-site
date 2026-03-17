@@ -1,4 +1,5 @@
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
+import Link from "next/link";
 
 /* ── iOS-style app icons ────────────────────────────────────────── */
 
@@ -266,13 +267,12 @@ export default function ServicesSection() {
           </p>
 
           {/* CTA button — same pill style as LetsTalkButton */}
-          <div
+          <Link
+            href="/services"
             className="mt-6 inline-flex items-center gap-2 rounded-full py-1.5 pl-5 pr-1.5"
             style={{ backgroundColor: "#F1F5F9" }}
           >
-            <span className="text-sm font-medium md:text-lg text-[#0F1010]">
-              SERVICES
-            </span>
+            <span className="text-sm font-medium text-[#0F1010]">SERVICES</span>
             <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#064ADF]">
               <svg
                 width="14"
@@ -290,7 +290,7 @@ export default function ServicesSection() {
                 />
               </svg>
             </span>
-          </div>
+          </Link>
         </RevealOnScroll>
 
         {/* ── Service grid ── */}

@@ -32,7 +32,7 @@ export default function AboutTeamSection() {
             Make some noise for our talented founders
           </h2>
           <p className="mt-4 text-sm text-[#696F77] md:text-base">
-            Get to know the people that get it all done.
+            Get to know the pioneers of the vision.
           </p>
         </RevealOnScroll>
 

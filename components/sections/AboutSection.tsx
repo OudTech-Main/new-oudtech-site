@@ -1,5 +1,6 @@
 import Image from "next/image";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
+import Link from "next/link";
 
 export default function AboutSection() {
   const r = 44;
@@ -29,7 +30,8 @@ export default function AboutSection() {
             delay={0.12}
             threshold={0}
           >
-            <div
+            <Link
+              href="/about"
               className="inline-flex items-center gap-2 rounded-full py-1.5 pl-5 pr-1.5"
               style={{ backgroundColor: "#F1F5F9" }}
             >
@@ -53,7 +55,7 @@ export default function AboutSection() {
                   />
                 </svg>
               </span>
-            </div>
+            </Link>
           </RevealOnScroll>
         </div>
 
@@ -179,7 +181,7 @@ export default function AboutSection() {
             {/* 6b. Body text slides in from left */}
             <RevealOnScroll direction="right" delay={0.45} threshold={0}>
               <p className="mt-6 text-base font-medium leading-7 text-[#696F77]">
-                Oud-Technologies is a product-driven technology company building
+                OudTechnologies is a product-driven technology company building
                 practical Digital solutions. We focus on product design, user
                 experience, and real-world problem solving, operating at the
                 intersection of software development and innovation across
