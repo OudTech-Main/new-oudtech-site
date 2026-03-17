@@ -31,14 +31,20 @@ const emailFooter = `
       <a href="https://www.youtube.com/@OudTechnologies" style="display:inline-block;margin:0 6px;color:#0f1010;font-size:12px;text-decoration:none;font-family:sans-serif">YouTube</a>
     </div>
     <p style="margin:0;font-size:11px;color:#b0b5bc;font-family:sans-serif;line-height:1.6">
-      OudTechnologies · Lagos, Nigeria<br/>
+      OudTechnologies · Port Harcourt, Nigeria<br/>
       <a href="mailto:info@oudtechnologies.com" style="color:#0f1010">info@oudtechnologies.com</a> &nbsp;·&nbsp; +234 916 324 9133
     </p>
   </div>
 `;
 
 /* ── Team notification email ───────────────────────────────────── */
-function teamEmailHtml(fullName: string, email: string, phone: string, country: string, message: string) {
+function teamEmailHtml(
+  fullName: string,
+  email: string,
+  phone: string,
+  country: string,
+  message: string,
+) {
   return `
     <!DOCTYPE html>
     <html lang="en">
