@@ -32,7 +32,7 @@ const emailFooter = `
     </div>
     <p style="margin:0;font-size:11px;color:#b0b5bc;font-family:sans-serif;line-height:1.6">
       OudTechnologies · Port Harcourt, Nigeria<br/>
-      <a href="mailto:info@oudtechnologies.com" style="color:#0f1010">info@oudtechnologies.com</a> &nbsp;·&nbsp; +234 916 324 9133
+      <a href="mailto:info@oudtechnologies.com" style="color:#0f1010">info@oudtechnologies.com</a> &nbsp;·&nbsp; +234 805 295 2194
     </p>
   </div>
 `;
