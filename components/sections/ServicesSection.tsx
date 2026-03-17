@@ -201,37 +201,37 @@ const services = [
   {
     title: "Strategy",
     description:
-      "Most first versions try to do too much. We help you find the idea inside the idea, the version that ships fast, teaches you something, and gives you a foundation to grow from.",
+      "Most first versions fail because they try to do too much, too soon. We help you strip your idea down to its core—the smallest version that delivers real value. Through product thinking, market validation, and prioritization, we define a clear roadmap that gets you to launch faster, with purpose.",
     icon: <MapIcon />,
   },
   {
     title: "Design",
     description:
-      "Most first versions try to do too much. We help you find the idea inside the idea, the version that ships fast, teaches you something, and gives you a foundation to grow from.",
+      "Great products aren’t just functional—they feel right. We design intuitive, user-centered experiences that make your product easy to understand and enjoyable to use from day one.",
     icon: <BrushIcon />,
   },
   {
     title: "Marketing",
     description:
-      "Most first versions try to do too much. We help you find the idea inside the idea, the version that ships fast, teaches you something, and gives you a foundation to grow from.",
+      "Building is only half the job—getting users is the other half. We help you position your product, craft your message, and create early traction before and after launch.",
     icon: <MegaphoneIcon />,
   },
   {
     title: "AI & Automation",
     description:
-      "Most first versions try to do too much. We help you find the idea inside the idea, the version that ships fast, teaches you something, and gives you a foundation to grow from.",
+      "Move faster by working smarter. We integrate AI and automation into your product and workflows to reduce manual effort and unlock new capabilities.",
     icon: <SparkleIcon />,
   },
   {
     title: "Development",
     description:
-      "Most first versions try to do too much. We help you find the idea inside the idea, the version that ships fast, teaches you something, and gives you a foundation to grow from.",
+      "We build reliable, scalable products that are ready for real users. Our focus is on shipping quickly without compromising quality, so you can learn, iterate, and grow.",
     icon: <SwiftIcon />,
   },
   {
     title: "Web & Mobile",
     description:
-      "Most first versions try to do too much. We help you find the idea inside the idea, the version that ships fast, teaches you something, and gives you a foundation to grow from.",
+      "Whether it’s a web platform, mobile app, or both—we build products that work seamlessly across devices.",
     icon: <GlobeIcon />,
   },
 ];

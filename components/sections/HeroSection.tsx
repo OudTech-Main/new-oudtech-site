@@ -30,7 +30,7 @@ export default function HeroSection() {
       <div className="relative z-10 mx-auto w-full max-w-5xl px-6 pt-32 text-center text-white sm:pt-36 md:pt-44 lg:pt-52">
         {/* Headline */}
         <RevealOnScroll direction="up" delay={0.1}>
-          <h1 className="text-4xl font-bold leading-[1.15] tracking-tight md:text-5xl lg:text-[57px]">
+          <h1 className="text-3xl font-bold leading-[1.15] tracking-tight md:text-5xl lg:text-[57px]">
             Building Simple Ideas
             <br />
             <span className="text-white">into </span>
