@@ -84,10 +84,7 @@ export default function AboutPageHero() {
 
             <RevealOnScroll direction="up" delay={0.35} threshold={0}>
               <p className="mt-6 max-w-md text-base leading-7 text-[#8B8F94]">
-                Oud-Technologies is a product-driven technology company building
-                practical digital solutions. We focus on product design, user
-                experience, and real-world problem solving, operating at the
-                intersection of design and engineering.
+                Every business has a vision. Let us bring yours to life with modern technology, creative thinking, and strategic execution, delivering digital solutions that not only look great but perform exceptionally.
               </p>
             </RevealOnScroll>
 

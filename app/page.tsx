@@ -10,7 +10,7 @@ import TestimonialsSection from "@/components/sections/TestimonialsSection";
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://oudtechnologies.com";
 
 export const metadata: Metadata = {
-  title: "Oudtech — Modern Technology Solutions",
+  title: "OudTech — Modern Technology Solutions",
   description:
     "We design and engineer scalable digital products for ambitious companies. Explore our services in product strategy, UX, full-stack engineering, and AI integration.",
   alternates: {
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const schema = generateWebPageSchema({
     url: BASE_URL,
-    name: "Oudtech — Modern Technology Solutions",
+    name: "OudTech — Modern Technology Solutions",
     description:
-      "Oud-Technologies builds practical digital solutions — product design, web and mobile development, and SEO for modern businesses.",
+      "Oud Technologies builds practical digital solutions — product design, web and mobile development, and SEO for modern businesses.",
   });
 
   return (

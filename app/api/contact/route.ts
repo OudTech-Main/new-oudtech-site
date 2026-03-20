@@ -31,7 +31,7 @@ const emailFooter = `
       <a href="https://www.youtube.com/@OudTechnologies" style="display:inline-block;margin:0 6px;color:#0f1010;font-size:12px;text-decoration:none;font-family:sans-serif">YouTube</a>
     </div>
     <p style="margin:0;font-size:11px;color:#b0b5bc;font-family:sans-serif;line-height:1.6">
-      OudTechnologies · Port Harcourt, Nigeria<br/>
+      Oud Technologies · Port Harcourt, Nigeria<br/>
       <a href="mailto:info@oudtechnologies.com" style="color:#0f1010">info@oudtechnologies.com</a> &nbsp;·&nbsp; +234 805 295 2194
     </p>
   </div>
@@ -120,7 +120,7 @@ function clientEmailHtml(firstName: string) {
             Hi ${firstName}, we got your message!
           </h1>
           <p style="margin:0 0 32px;font-size:15px;line-height:1.8;color:#6b7280;font-family:sans-serif;max-width:400px;margin-left:auto;margin-right:auto">
-            Thank you for reaching out to OudTechnologies. Our team will review your enquiry and get back to you within <strong style="color:#0f1010">24–48 hours</strong>.
+            Thank you for reaching out to Oud Technologies. Our team will review your enquiry and get back to you within <strong style="color:#0f1010">24–48 hours</strong>.
           </p>
 
           <div style="background:#f9f9f9;border-radius:12px;padding:24px 32px;margin-bottom:36px;text-align:left">

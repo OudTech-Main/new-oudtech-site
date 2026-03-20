@@ -307,7 +307,7 @@ export default function ServicesSection() {
                 <div className="mb-8">{service.icon}</div>
 
                 {/* Text */}
-                <p className="text-base md:text-[22px] leading-7 text-[#757574]">
+                <p className="text-base md:text-[16px] leading-7 text-[#757574]">
                   <span className="font-medium text-[#03030F]">
                     {service.title}{" "}
                   </span>

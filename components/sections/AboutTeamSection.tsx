@@ -4,7 +4,7 @@ import RevealOnScroll from "@/components/ui/RevealOnScroll";
 const founders = [
   {
     name: "David Okwudiri U.",
-    role: "Founder & Creative Director",
+    role: "Founder & CEO",
     image: "/founder-david.png",
   },
   {

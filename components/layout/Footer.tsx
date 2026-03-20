@@ -153,8 +153,8 @@ export default function Footer() {
 
             {/* Copyright */}
             <p className="mt-10 text-xs text-[#7E8084]">
-              &copy; {new Date().getFullYear()}. Oudtechnologies.com All Rights
-              Reserved.
+              &copy; {new Date().getFullYear()} Oud Technologies. All rights
+              reserved.
             </p>
           </div>
         </div>

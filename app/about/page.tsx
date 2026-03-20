@@ -8,7 +8,7 @@ import AboutTeamSection from "@/components/sections/AboutTeamSection";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Oud-Technologies — a product-driven technology company building practical digital solutions across fintech, rentals, emergency services, and e-commerce.",
+    "Learn about Oud Technologies — a product-driven technology company building practical digital solutions across fintech, rentals, emergency services, and e-commerce.",
   keywords: [
     "about oudtech",
     "oud technologies",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     canonical: "/about",
   },
   openGraph: {
-    title: "About Us | Oudtech",
+    title: "About Us | OudTech",
     description:
-      "Learn about Oud-Technologies — a product-driven company building practical digital solutions across fintech, rentals, and e-commerce.",
+      "Learn about Oud Technologies — a product-driven company building practical digital solutions across fintech, rentals, and e-commerce.",
     url: "/about",
   },
 };
@@ -34,9 +34,9 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://oudtechnologies.co
 export default function AboutPage() {
   const schema = generateWebPageSchema({
     url: `${BASE_URL}/about`,
-    name: "About Us | Oudtech",
+    name: "About Us | OudTech",
     description:
-      "Learn about Oud-Technologies — a product-driven technology company building practical digital solutions.",
+      "Learn about Oud Technologies — a product-driven technology company building practical digital solutions.",
   });
 
   return (

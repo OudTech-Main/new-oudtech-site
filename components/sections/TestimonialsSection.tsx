@@ -44,19 +44,11 @@ const testimonials = [
   },
   {
     quote:
-      "From the first meeting, they were invested in our success. Their structured process and sharp strategy helped us turn a struggling department into a high-performing unit.",
-    name: "Lemuella Oyinbunugha",
-    role: "Founder, Lumora Accountability Circle",
-    avatar: "/lemuella.jpeg",
-    offset: false,
-  },
-  {
-    quote:
       "What impressed me most was their attention to detail and the way they kept us informed at every stage of the process. Regular updates and clear communication throughout.",
     name: "Jeffery Edwards",
     role: "CEO, TheeGodBrand",
     avatar: "/jeff.PNG",
-    offset: true,
+    offset: false,
   },
   {
     quote:
@@ -64,7 +56,7 @@ const testimonials = [
     name: "Melody Frank",
     role: "CEO, Zurirealm",
     avatar: "/melody.jpeg",
-    offset: false,
+    offset: true,
   },
 ];
 

@@ -43,15 +43,15 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://oudtech.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Oudtech — Modern Technology Solutions",
-    template: "%s | Oudtech",
+    default: "OudTech — Modern Technology Solutions",
+    template: "%s | OudTech",
   },
   description:
-    "Oudtech delivers cutting-edge technology solutions — from product design to scalable engineering — for ambitious businesses.",
-  keywords: ["technology", "software", "engineering", "design", "oudtech"],
-  authors: [{ name: "Oudtech", url: BASE_URL }],
-  creator: "Oudtech",
-  publisher: "Oudtech",
+    "OudTech delivers cutting-edge technology solutions — from product design to scalable engineering — for ambitious businesses.",
+  keywords: ["technology", "software", "engineering", "design", "OudTech"],
+  authors: [{ name: "OudTech", url: BASE_URL }],
+  creator: "OudTech",
+  publisher: "OudTech",
   robots: {
     index: true,
     follow: true,
@@ -67,21 +67,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: BASE_URL,
-    siteName: "Oudtech",
-    title: "Oudtech — Modern Technology Solutions",
+    siteName: "OudTech",
+    title: "OudTech — Modern Technology Solutions",
     description: "Cutting-edge technology solutions for ambitious businesses.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Oudtech — Modern Technology Solutions",
+        alt: "OudTech — Modern Technology Solutions",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Oudtech — Modern Technology Solutions",
+    title: "OudTech — Modern Technology Solutions",
     description: "Cutting-edge technology solutions for ambitious businesses.",
     images: ["/og-image.jpg"],
     creator: "@oudtech",

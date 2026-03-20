@@ -181,8 +181,8 @@ export default function AboutSection() {
             {/* 6b. Body text slides in from left */}
             <RevealOnScroll direction="right" delay={0.45} threshold={0}>
               <p className="mt-6 text-base font-medium leading-7 text-[#696F77]">
-                OudTechnologies is a product-driven technology company building
-                practical Digital solutions. We focus on product design, user
+                Oud Technologies is a product-driven technology company building
+                practical digital solutions. We focus on product design, user
                 experience, and real-world problem solving, operating at the
                 intersection of software development and innovation across
                 fintech, rentals, emergency services, and e-commerce.

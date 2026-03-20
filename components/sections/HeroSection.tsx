@@ -48,8 +48,8 @@ export default function HeroSection() {
         {/* Subtext */}
         <RevealOnScroll direction="up" delay={0.25}>
           <p className="mx-auto mt-7 max-w-xl text-base leading-7 text-[#8B8F94]">
-            OudTechnologies is a product-driven technology company building
-            practical Digital solutions. We focus on product design, user
+            Oud Technologies is a product-driven technology company building
+            practical digital solutions. We focus on product design, user
             experience, and real-world problem solving, operating at the
             intersection of design and engineering.
           </p>

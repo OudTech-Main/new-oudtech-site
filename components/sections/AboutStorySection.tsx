@@ -36,15 +36,18 @@ export default function AboutStorySection() {
             <RevealOnScroll direction="right" delay={0.35} threshold={0}>
               <p className="mt-6 text-base leading-5 text-[#696F77] lg:text-xl lg:leading-7">
                 <span className="lg:hidden leading-snug">
-                  Oud-Technologies builds practical digital solutions focused on
-                  product design and real-world problem solving.
+                   It all started with a desire to create something meaningful—to help businesses bring their ideas to life through technology.
+                  <br></br>
+                  Over time, that passion has grown into a commitment to delivering solutions that truly make a difference. We work closely with our clients, understanding their vision and transforming it into digital products that are simple, effective, and impactful.
+                  <br></br>
+                  For us, it’s not just about building software,it’s about building relationships, creating value, and being part of our clients’ success stories.
                 </span>
                 <span className="hidden lg:inline">
-                  Oud-Technologies is a product-driven technology company
-                  building practical Digital solutions. We focus on product
-                  design, user experience, and real-world problem solving,
-                  operating at the intersection of software development and
-                  innovation across all sectors.
+                  It all started with a desire to create something meaningful—to help businesses bring their ideas to life through technology.
+                  <br></br>
+                  Over time, that passion has grown into a commitment to delivering solutions that truly make a difference. We work closely with our clients, understanding their vision and transforming it into digital products that are simple, effective, and impactful.
+                  <br></br>
+                  For us, it’s not just about building software,it’s about building relationships, creating value, and being part of our clients’ success stories.
                 </span>
               </p>
             </RevealOnScroll>

@@ -5,7 +5,7 @@ import ContactFormSection from "@/components/sections/ContactFormSection";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Oud-Technologies. Reach out for partnerships, project inquiries, or general questions — we're here to help.",
+    "Get in touch with Oud Technologies. Reach out for partnerships, project inquiries, or general questions — we're here to help.",
   keywords: [
     "contact oudtech",
     "oud technologies contact",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "/contact",
   },
   openGraph: {
-    title: "Contact | Oudtech",
+    title: "Contact | OudTech",
     description:
-      "Reach out to Oud-Technologies for partnerships, events, or general inquiries.",
+      "Reach out to Oud Technologies for partnerships, events, or general inquiries.",
     url: "/contact",
   },
 };
@@ -29,9 +29,9 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://oudtechnologies.co
 export default function ContactPage() {
   const schema = generateWebPageSchema({
     url: `${BASE_URL}/contact`,
-    name: "Contact | Oudtech",
+    name: "Contact | OudTech",
     description:
-      "Get in touch with Oud-Technologies for partnerships, project inquiries, or general questions.",
+      "Get in touch with Oud Technologies for partnerships, project inquiries, or general questions.",
   });
 
   return (
